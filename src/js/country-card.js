@@ -5,7 +5,7 @@ export const makeCountryMarkup = (countries) => countries.map(({name, flags, cap
     </div>
     <p class="country-text"><span>Capital: </span>${capital}</p>
     <p class="country-text"><span>Population: </span>${population}</p>
-    <p class="country-text"><span>Languages: </span>${languages}</p>`).join('');
+    <p class="country-text"><span>Languages: </span>${Object.values(languages).join(", ")}</p>`).join('');
 
 export const makeCountryList = (countries) => countries.map(({name, flags}) =>
     `<li class="list-item">
